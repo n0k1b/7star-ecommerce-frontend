@@ -1,21 +1,148 @@
-//css
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+# {
+    font-size: 20px ;
+    cursor: pointer ;
+        margin-left: 100px ;
+}
+span{
+        margin-left: px;
+    padding-right: 20px;
+    margin-top: 25px;
+        font-size:20px !important;
+    }
+span h4{
+    font-size: 20px;
+    margin-left:20px;
+    margin-top: -15px;
+}
+span h3{
+    margin-top: -30px;
+    margin-left: 50px; 
+    font-size: 20px;
+    
+}
+
+
+
+/*--section1--*/
+#section1{
+     width:100%;
+    margin-top: -8px;
+    }
+#mySidenav img .img2{
+     }
+.logo_area .logo1{
+    margin-left: -50px;
+    margin-top: -20px;
+}
+.logo_area .logo2{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+#section1 .box{
+    margin-top: 10px;
+    width:500px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding:15px;
+     
+}
+
+.box > i{
+    font-size: 20px;
+    color: #000;
+}
+.box>input{
+    flex: 1;
+    padding-top: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-size: 18px;
+}
+.navbar ul{
+ n display: block;
+}
+.navbar .nav-item{
+   font-family: Open Sans;
+font-size: 18px;
+    margin-top: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.0075em;
+text-align: center;
+    width: 150px;
+    
+}
+.navbar .nav-item button{}
+.navbar .nav-item button{
+    text-decoration: none;
+     color: gray;
+    border: 1px solid gray;
+
+    margin-left: -60px;
+/*
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+*/
+    border-radius: 8px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EFF7FF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.container .sidebar .pic{
+    padding-right:10px;
+}
+.sidenav a:hover {
+  color: #ddd;
+    background-color: antiquewhite;
+    border-radius:8px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 
