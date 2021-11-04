@@ -1,6 +1,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 
 # {
@@ -33,8 +34,15 @@ span h3{
      width:100%;
     margin-top: -8px;
     }
+.navbar{
+    width: 100%;
+    
+}
+.navbar .container{
+    width: 100%;
+}
 #mySidenav img .img2{
-     }
+}
 .logo_area .logo1{
     margin-left: -50px;
     margin-top: -20px;
@@ -45,7 +53,7 @@ span h3{
 }
 #section1 .box{
     margin-top: 10px;
-    width:500px;
+    width:350px;
     height: 70px;
     background-color: #fff;
     border-radius: 30px;
@@ -75,6 +83,7 @@ span h3{
    font-family: Open Sans;
 font-size: 18px;
     margin-top: 10px;
+    margin-right: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 32px;
@@ -88,8 +97,8 @@ text-align: center;
     text-decoration: none;
      color: gray;
     border: 1px solid gray;
-
-    margin-left: -60px;
+   font-size: 20px;
+    margin-left: -80px;
 /*
     padding-top:20px;
     padding-bottom: 20px;
@@ -97,6 +106,13 @@ text-align: center;
     padding-right: 5px;
 */
     border-radius: 8px;
+}
+.navbar .nav-item i.fa-cart-plus{margin-left:-70px;}
+.navbar .pls button.car{
+    margin-left: -80px;
+    font-size: 18px;
+    border: none;
+    box-shadow: gray;
 }
 .sidenav {
   height: 100%;
@@ -135,9 +151,88 @@ text-align: center;
   font-size: 36px;
   margin-left: 50px;
 }
+/*section2*/
+#section2{
+    width: 100%;
+    background: #fff;
 
+    height: 200px;
+}
+#section2 .container{width: 100%;height: auto;}
+#section2 .container ul{
+    list-style: none;
+    margin-top: 10px;
+}
+#section2 li{
+    display: inline-block;
+}
+#section2 .container ul li a{
+  margin-left:30px;;
+     font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 15px;
+}
 
+#section2 .container a{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0px;
+    color: #000;
+}
+/*-- Section3--*/
+#section3{
+}
+#section3 .active{height:400px !important;
+                 
+                background: url(img/image%2065.png);
+}
+#section3 .carousel-item a{margin-top: 500px;
+                           text-decoration: none;
+                           background-color: aqua;}
+#section3 .carousel-item{
+/*    background: url(img/image%2065.png);*/
+    height: auto;
+    
+}
 
+#section3{
+    
+}
+
+/* --section4-- */
+#section4{
+    width: 100%;
+    height: 200px;
+    
+}
+#section4 .container {
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+}
+#section4 .container .row .col-md-6>p{
+    color: #000;
+    font-family: Open Sans;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0em;
+text-align: left;
+border-left: 1px solid #CA2400;
+}
+#section4 .container .row .col-md-6>a{
+    text-decoration: none;;
+    margin-right: 50px;
+    margin-top: 4px;
+    color:#CA2400;
+    padding: 8px;
+    border: 1px solid #CA2400;
+    border-radius: 4px;
+    width: 132px; 
+    height: 60px;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
