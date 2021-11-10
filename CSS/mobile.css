@@ -1,0 +1,38 @@
+@media only screen and (max-width:768px){
+    #section3 .kk{
+        background-position:-18vmin -0vmin !important;
+    } 
+    #section5 .rice{
+      margin-top: 50px;
+      margin-left: -0px;
+    }
+    #section5 .container .row .col-md-5 .elipse{
+        margin-left: -30px;
+    }
+    #section5 .col-md-2{
+        margin-left: -90px;
+    }
+   #section4 .container .row .col-md-6>a{
+   margin-left:50px;
+   margin-right: 0px;
+   margin-top: 40px; 
+   }
+   #section4 .container .row .col-md-6>h3{
+     margin-top: -4px;   
+  }
+  #section4 .container .row .col-md-6>img{
+      margin-bottom: -30px;
+  }
+  #section6 .container .row .col-md-6>a{
+    margin-left:50px;
+    margin-top: 40px; 
+
+  }
+  #section6 .container .row .col-md-6>h3{
+    margin-top: -4px;   
+  }
+  #section6 .container .row .col-md-6>img{
+    margin-bottom: -30px;
+
+}
+}
