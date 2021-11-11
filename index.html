@@ -45,19 +45,26 @@
                 <input class="form-control mr-sm-2" area-hidden="true" type="search" placeholder="Search for the food you want" aria-label="">
                  <i class="fas fa-times"></i>
                </div>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Track Order <span class="sr-only">(current)</span></a>
+                <div class="item">
+                    <li class="nav-item active track">
+                  <a class="nav-link" href="#" class="track">Track Order <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Help & Contact</a>
+                <li class="nav-item help">
+                  <a class="nav-link"  href="#">Help & Contact</a>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-gray">Sign In</button>
                 </li>
                 <li class="nav-item pls">
-                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                     <button type="button"  class="btn btn-gray car">My Cart</button>
+                  <button type="button"  class="btn btn-gray car">
+                   <i class="fa fa-cart-plus" aria-hidden="true"></i>My Cart
+                   <a href="#">5</a>
+                   </button>
                 </li>
+                 <li class="nav-item">
+                 <img src="img/fahmi.png" alt="">
+                </li>
+                </div>
               </ul>
               </div>
             </div>
@@ -69,7 +76,7 @@
         <ul>
             
             <li><a href="#">Home Food</a></li>
-            <li><a href="#"> Fast Food</li>
+            <li><a href="#"> Fast Food</a></li>
             <li><a href="#"  class="ff">Halal Fodd</a></li>
             <li><a href="#" >Desserts</a></li>
             <li><a href="#" >Sandwich</a></li>
@@ -120,7 +127,8 @@
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-      </div>
+        
+        </div>
     </section>
     
     <section id="section4">
@@ -130,8 +138,8 @@
               <h3>Popular categories</h3>
 <img src="img/Line 4.png" alt="">
             </div>
-            <div class="col-md-6">
-              <a href="#">Explore All</a>
+            <div class="col-md-6 al">
+              <a href="#" >Explore All</a>
             </div>
         </div>
      </div>
@@ -176,10 +184,10 @@
       <div class="container" >
         <div class="row">
             <div class="col-md-6">
-              <h3>Popular categories</h3>
+              <h3>Hot sales</h3>
 <img src="img/Line 4.png" alt="">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 sale">
               <a href="#">Explore All</a>
             </div>
         </div>
@@ -570,7 +578,7 @@
               <a href="#" class="asian">Asian Food</a>
               
                </div>
-               <div class="col-md-8 col-lg-8 col-6">
+               <div class="col-lg-8 col-md-8 col-12">
                    <img src="img/per.png" class="per" alt="">
                    <img src="img/Get%2050%25%20discount.png"  class="five"alt="">
                </div>
@@ -586,10 +594,10 @@
                <div class="col-md-4">
                    <div class="rd">
                          
-                             <a href="#" class="swedish" style="margin-top:300px;">Swedish Food</a>
-                             <a href="#" class="swedish" style="margin-top:300px;">Swedish Food</a>
-                         
+                            <button href="#" >Swedish Food</button>
                        <div class="cc">
+                           
+                         
                             <h5 class="card-title">Large fish 1:2</h5>
                           <img src="" alt="">
                           <div class="rating">
@@ -604,7 +612,7 @@
               </div>
       <div class="col-md-4">
                    <div class="rd " >
-                         <a href="#" class="swedish">Swedish Food</a>
+                           <button href="#" >Swedish Food</button>
                        <div class="cc">
                             <h5 class="card-title">Large fish 1:2</h5>
                           <img src="" alt="">
@@ -620,12 +628,12 @@
               </div>           
     <div class="col-md-4 last " >
                    <div class="rd" >
-                         <a href="#" class="swedish">Swedish Food</a>
+                           <button href="#" >Swedish Food</button>
                         <div class="cc">
                             <h5 class="card-title">Large fish 1:2</h5>
                           <img src="" alt="">
                           <div class="rating">
-                              <i class="fas fa-star" ></i>
+                        <i class="fas fa-star" ></i>
                           <i class="fas fa-star" ></i>
                           <i class="fas fa-star" ></i>
                           <i class="fas fa-star" ></i>
@@ -639,7 +647,6 @@
          </div>
     </div>
    </section>
-   
    
    <section id="section12">
        <div class="container">
@@ -741,11 +748,12 @@
    
    
  </body>
+ <script src="js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
 	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/index.js"></script>
+	
    
    
 <script>
