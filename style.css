@@ -5,6 +5,7 @@
     --accent: #2EA387;
     --light-gray: #EDEDF0;
     --gray: #555555;
+    --light-accent: #EFF7FF;
     --font-s: 1.125rem;
     --font-standard: 1.25rem;
     --font-l: 1.5rem;
@@ -15,6 +16,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+i {
+    line-height: 0px;
 }
 body {
     width: 100%;

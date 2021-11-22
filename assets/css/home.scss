@@ -83,6 +83,11 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: margin .5s ease-out;
+        &__hide {
+            z-index: -1;
+            margin-top: -50%;
+        }
         & .menu {
             display: flex;
             justify-content: center;
@@ -101,13 +106,55 @@ nav {
         }
     }
     .mobile_nav {
+        display: none;
         position: absolute;
         left: 0px;
         top: 0px;
-        width: 100%;
+        width: 90vw;
         height: 100vh;
-        overflow-y: scroll;
-        background-color: white;
+        max-width: 500px;
+        
+        
+        background-color: var(--light-accent);
+        
+        transition: margin .5s ease-out;
+        .scroll_container {
+            height: 100%;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        
+        &__hide {
+            margin-left: -110%;
+        }
+        &__collapse {
+            position: absolute;
+            right: 0px;
+            top: 50vh;
+            cursor: pointer;
+            z-index: 2;
+            transform: translate(50%, -50%);
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 18px rgba(0, 0, 0, 0.12);
+            height: 64px;
+            width: 64px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            transition: all .5s ease-out;
+            &:hover {
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 14px rgba(0, 0, 0, 0.12);
+            }
+            &-hide {
+                right: 110vw;
+            }
+        }
         &-logo {
             display: flex;
             justify-content: center;
@@ -166,5 +213,31 @@ nav {
                 }    
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    .mobile_nav {
+        display: block !important;
+        &__collapse {
+            display: flex !important;
+        }
+    }
+
+    .primary_nav-logo {
+        span {
+            display: none !important;
+        }
+    }
+    .primary_nav-menu_items {
+        display: none !important;
+    }
+    .primary_nav-menu {
+        span {
+            display: none;
+        }
+    }
+    .secondary_nav {
+        display: none !important;
     }
 }
