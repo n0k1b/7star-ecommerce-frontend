@@ -21,7 +21,7 @@ if(collapsibles.length > 0 && collapsibles !== null) {
 }
 
 
-let secondaryNavOpen = false;
+// let secondaryNavOpen = false;
 document.getElementById("close_navbar").addEventListener('click', () => {
     document.getElementById("close_navbar").classList.add("mobile_nav__collapse-hide")
     document.querySelector(".mobile_nav").classList.add("mobile_nav__hide")
@@ -30,10 +30,10 @@ document.querySelector(".primary_nav-menu").addEventListener('click', () => {
     document.getElementById("close_navbar").classList.remove("mobile_nav__collapse-hide")
     document.querySelector(".mobile_nav").classList.remove("mobile_nav__hide")
 
-    if(secondaryNavOpen) {
-        document.querySelector(".secondary_nav").classList.add("secondary_nav__hide")
-    } else {
-        document.querySelector(".secondary_nav").classList.remove("secondary_nav__hide")
-    }
-    secondaryNavOpen = !secondaryNavOpen
+    // if(secondaryNavOpen) {
+    //     document.querySelector(".secondary_nav").classList.add("secondary_nav__hide")
+    // } else {
+    //     document.querySelector(".secondary_nav").classList.remove("secondary_nav__hide")
+    // }
+    // secondaryNavOpen = !secondaryNavOpen
 })
