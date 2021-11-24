@@ -1,73 +1,4 @@
-.hero {
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 178px;
-    .glider-contain{
-        width: 100%;
-        box-sizing: border-box;
-        .glider-next {
-            right: 60px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--primary);
-        }
-        .glider-prev {
-            left: 60px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--primary);
-        }
-        .glider {
-            height: 420px;
-            width: 100%;            
-            & > div {                
-                background-size: cover;    
-                height: 100%;  
-                display: flex;         
-            }
-            .container {
-                width: 80%;
-                margin: 0 auto;
-                height: 100%;
-                
-            }
-            .slide-1 {
-                display: flex;
-                align-items: center;
-                h1 {
-                    font-size: 4rem;
-                    color: var(--primary);
-                }   
-                p {
-                    margin-top: 15px;
-                    font-size: 2rem;
-                }
-                .call_to_action {
-                    margin-top: 15px;
-                }
-                
-            }
-            .slide-2 {
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                color: white;
-                align-items: center;
-                h1 {
-                    font-size: 4rem;
-                }   
-                p {
-                    margin-top: 10px;
-                    font-size: 2rem;
-                }
-                .call_to_action {
-                    margin-top: 20px;
-                }
-                
-            }
-        }
-    }
-}
+
 .popular_categories {
     .item {
         p {
@@ -115,17 +46,7 @@
     }
 }
 @media only screen and (max-width: 1028px) {
-    .hero {
-        margin-top: 88px;
-    }
-    .glider-contain{
-        .glider-next {
-            right: 15px !important;
-        }
-        .glider-prev {
-            left: 15px !important;
-        }
-    }
+    
     .h_list-5 {
         grid-template-columns: 4 !important;
     }

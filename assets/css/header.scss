@@ -1,3 +1,7 @@
+:root {
+    --nav-height: 178px;
+    --nav-height-half: 88px;
+}
 nav {
     position: fixed;
     left: 0px;
@@ -87,6 +91,11 @@ nav {
         justify-content: center;
         align-items: center;
         transition: margin .5s ease-out;
+        .selected {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            pointer-events: none;
+        }
         &__hide {
             z-index: -1;
             margin-top: -50%;
@@ -216,8 +225,94 @@ nav {
         }
     }
 }
-
+.space_out_nav {
+    margin-top: var(--nav-height);
+}
+.hero {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: var(--nav-height);
+    .glider-contain{
+        width: 100%;
+        box-sizing: border-box;
+        .glider-next {
+            right: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+        }
+        .glider-prev {
+            left: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+        }
+        .glider {
+            height: 420px;
+            width: 100%;            
+            & > div {                
+                background-size: cover;    
+                height: 100%;  
+                display: flex;         
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                height: 100%;
+                
+            }
+            .slide-1 {
+                display: flex;
+                align-items: center;
+                h1 {
+                    font-size: 4rem;
+                    color: var(--primary);
+                }   
+                p {
+                    margin-top: 15px;
+                    font-size: 2rem;
+                }
+                .call_to_action {
+                    margin-top: 15px;
+                }
+                
+            }
+            .slide-2 {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                color: white;
+                align-items: center;
+                h1 {
+                    font-size: 4rem;
+                }   
+                p {
+                    margin-top: 10px;
+                    font-size: 2rem;
+                }
+                .call_to_action {
+                    margin-top: 20px;
+                }
+                
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1028px) {
+    .hero {
+        margin-top: 88px;
+    }
+    .space_out_nav {
+        margin-top: var(--nav-height-half);
+    }
+    .glider-contain{
+        .glider-next {
+            right: 15px !important;
+        }
+        .glider-prev {
+            left: 15px !important;
+        }
+    }
     .mobile_nav {
         display: block !important;
         &__collapse {

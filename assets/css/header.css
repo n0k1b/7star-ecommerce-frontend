@@ -1,3 +1,8 @@
+:root {
+  --nav-height: 178px;
+  --nav-height-half: 88px;
+}
+
 nav {
   position: fixed;
   left: 0px;
@@ -138,6 +143,12 @@ nav .secondary_nav {
           align-items: center;
   -webkit-transition: margin .5s ease-out;
   transition: margin .5s ease-out;
+}
+
+nav .secondary_nav .selected {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  pointer-events: none;
 }
 
 nav .secondary_nav__hide {
@@ -317,7 +328,121 @@ nav .mobile_nav .menu .collapsible_menu {
   transition: margin .3s ease-out;
 }
 
+.space_out_nav {
+  margin-top: var(--nav-height);
+}
+
+.hero {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: var(--nav-height);
+}
+
+.hero .glider-contain {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero .glider-contain .glider-next {
+  right: 60px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--primary);
+}
+
+.hero .glider-contain .glider-prev {
+  left: 60px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--primary);
+}
+
+.hero .glider-contain .glider {
+  height: 420px;
+  width: 100%;
+}
+
+.hero .glider-contain .glider > div {
+  background-size: cover;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .glider-contain .glider .container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.hero .glider-contain .glider .slide-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .glider-contain .glider .slide-1 h1 {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.hero .glider-contain .glider .slide-1 p {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.hero .glider-contain .glider .slide-1 .call_to_action {
+  margin-top: 15px;
+}
+
+.hero .glider-contain .glider .slide-2 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .glider-contain .glider .slide-2 h1 {
+  font-size: 4rem;
+}
+
+.hero .glider-contain .glider .slide-2 p {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.hero .glider-contain .glider .slide-2 .call_to_action {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 1028px) {
+  .hero {
+    margin-top: 88px;
+  }
+  .space_out_nav {
+    margin-top: var(--nav-height-half);
+  }
+  .glider-contain .glider-next {
+    right: 15px !important;
+  }
+  .glider-contain .glider-prev {
+    left: 15px !important;
+  }
   .mobile_nav {
     display: block !important;
   }

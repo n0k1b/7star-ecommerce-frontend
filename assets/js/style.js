@@ -45,4 +45,27 @@ function createStarRatingView()
         }
     })
 }
+
+function makeFavouriteButton() {
+    document.querySelectorAll('.favourite').forEach(item => {
+        if(!item.classList.contains('activated')) {
+            item.innerHTML = `<i class="bi bi-heart"></i>`
+        } else {
+            item.innerHTML = `<i class="bi bi-heart-fill"></i>`
+        }
+    })
+}
+function selectBadge() {
+    document.querySelectorAll('.selectable_badges').forEach(item => {
+        item.addEventListener('click', () => {
+            if(!item.classList.contains('badge_selected')) {
+                item.classList.add('badge_selected')
+            } else {
+                item.classList.remove('badge_selected')
+            }
+        })
+    })
+}
+selectBadge()
 createStarRatingView()
+makeFavouriteButton()

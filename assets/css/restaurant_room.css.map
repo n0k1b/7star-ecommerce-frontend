@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,mBAFW,CACf,KAAK,CACD,CAAC,CAAC;EACE,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,MACf;CAAC",
+    "sources": [
+        "restaurant_room.scss"
+    ],
+    "names": [],
+    "file": "restaurant_room.css"
+}

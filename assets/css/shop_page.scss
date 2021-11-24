@@ -1,0 +1,62 @@
+.breadcrumb {
+    padding: 10px 0px;
+}
+.heading {
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary), white);
+    height: 170px;
+    display: flex;
+    align-items: center;
+    &__text {
+        color: white;        
+    }
+}
+.content {
+    display: flex;
+    gap: 30px;
+    .search_filters {
+        width: 340px;
+        
+    }
+    .products {
+        flex: 1;
+    }
+}
+.category {
+    margin-top: var(--margin-subsection);
+    h4 {
+        font-size: 1.3rem;
+    }
+    .category_form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        .input_item {
+            margin-bottom: 18px;
+
+        }
+        input[type="radio"] {
+            margin-top: -1px;
+            vertical-align: middle;
+            margin-right: 18px;
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+    }
+}
+.dietary {
+    .selectable_badges {
+        span {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+.pagination_details {
+    margin-top: var(--margin-subsection);
+    display: flex;
+    justify-content: space-between;
+}
