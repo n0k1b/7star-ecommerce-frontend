@@ -42,10 +42,25 @@ body {
 /* Buttons */
 .btn {
     padding: 8px 12px 8px 12px;
-    font-weight: bold;
     border-radius: 5px;
     transition: background-color .3s ease-out;
     text-decoration: none;
+}
+.btn-2 {
+    padding: 5px 30px;
+    border-radius: 30px;
+    transition: background-color .3s ease-out;
+    text-decoration: none;
+}
+.btn-rounded {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    transition: background-color .3s ease-out;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 .btn:hover {
     background-color: var(--light-gray);
@@ -72,6 +87,13 @@ body {
 }
 .btn-3d:hover {
     box-shadow: 0px 2px 2px rgba(218, 87, 58, 0.1), 0px 1px 6px rgba(218, 87, 58, 0.2);
+}
+.btn-gray {
+    background-color: var(--gray);
+    color: white;
+    &:hover {
+        background-color: var(--dark-gray);
+    }
 }
 .container {
     max-width: 1280px;
@@ -125,6 +147,12 @@ body {
     grid-template-rows: auto;
     grid-gap: 15px;
 }
+.h_list-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
 .selectable_badges {
     display: inline-block;
     font-size: 0.7rem;
@@ -140,6 +168,29 @@ body {
     &:hover {
         background-color: var(--light-gray-2);
     }
+}
+.bordered_badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: black;
+    border: 2px solid var(--gray);
+    border-radius: 3px;
+    padding: 4px;
+}
+.badge {
+    padding: 4px 18px;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.badge-aqua {
+    background-color: #B3F7E6;
+    color: black;
+}
+.badge-light_red {
+    background-color: #FF8F76;
+    color: white;
 }
 .paginate_button {
     padding: 10px;
@@ -209,6 +260,30 @@ body {
 .mt-4 {
     margin-top: 40px;
 }
+.m-1 {
+    margin: 10px;
+}
+.m-2 {
+    margin: 15px;
+}
+.m-3 {
+    margin: 25px;
+}
+.m-4 {
+    margin: 40px;
+}
+.p-1 {
+    padding: 10px;
+}
+.p-2 {
+    padding: 15px;
+}
+.p-3 {
+    padding: 25px;
+}
+.p-4 {
+    padding: 40px;
+}
 .centered-flex {
     display: flex;
     justify-content: center;
@@ -231,6 +306,12 @@ body {
     height: 2px;
     width: 60px;
     margin-top: 2px;
+}
+.avatar-sm {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: cover;
 }
 /* Item card */
 .item_card {
@@ -350,6 +431,60 @@ body {
 
     
 }
+.review_card {
+    width: 100%;
+    max-width: 676px;
+    position: relative;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    .author {
+        display: flex;
+        gap: 30px;
+        padding: 18px;
+        border-bottom: 0.1px solid var(--light-gray);
+        p {
+            &:nth-child(2) {
+                font-weight: lighter;
+            }
+        }
+    }
+    .review {
+        padding: 18px;
+        display: flex;
+        gap: 40px;        
+        .thumbnail {
+            height: 140px;
+            width: 140px;
+            border-radius: 9px;
+            background-size: cover;
+        }
+        .details {
+            flex: 1;
+            .review_text {
+                font-weight: lighter;
+            }
+            .overview {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .reacts {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    margin-top: 5px;
+                    i {
+                        color: var(--light-gray);
+                    }
+                    p {
+                        font-weight: bold;
+                        color: var(--gray);
+                    }
+                }
+            }
+        }
+    }
+}
 /* Star rating style */
 .star_rating_container {
     display: flex;
@@ -440,10 +575,25 @@ body {
     
         
     }
+    .review_card {
+        .review {
+            gap: 7px;
+            .thumbnail {
+                width: 70px !important;
+                height: 70px !important;
+            }
+        }
+    }
 
     .h_list-3 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 5px;
+    }
+    .h_list-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-template-rows: auto;
         grid-gap: 5px;
     }
