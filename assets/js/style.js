@@ -1,3 +1,7 @@
+window.addEventListener('resize', () => {
+    matchHeight()
+})
+
 let section_headings = document.querySelectorAll(".section_heading")
 
 section_headings.forEach(heading => {
