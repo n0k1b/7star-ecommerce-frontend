@@ -53,40 +53,6 @@
   margin-top: 30px;
 }
 
-.page_content .tab_navigator .fields form .input_group label {
-  display: block;
-  font-size: 0.9rem;
-  color: var(--gray);
-  margin-bottom: 15px;
-}
-
-.page_content .tab_navigator .fields form .input_group .groued_input {
-  position: relative;
-}
-
-.page_content .tab_navigator .fields form .input_group .groued_input i {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 1.2rem;
-}
-
-.page_content .tab_navigator .fields form .input_group input {
-  display: block;
-  padding: 13px;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid var(--light-gray-2);
-  outline: none;
-}
-
-.page_content .tab_navigator .fields form .input_group input:focus {
-  border: 1px solid var(--gray);
-}
-
 .page_content .tab_navigator .fields .payment_selection form {
   display: -ms-grid;
   display: grid;

@@ -35,38 +35,7 @@
         }
         .fields {
             margin-top: 30px;  
-            form {            
-              .input_group {
-                  
-                  label {
-                      display: block;
-                      font-size: 0.9rem;
-                      color: var(--gray);
-                      margin-bottom: 15px;
-                  }
-                .groued_input {
-                    position: relative;
-                    i {
-                        position: absolute;
-                        right: 15px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        font-size: 1.2rem;
-                    }
-                  }
-                  input {
-                      display: block;
-                      padding: 13px;
-                      width: 100%;
-                      box-sizing: border-box;
-                      border: 1px solid var(--light-gray-2);
-                      outline: none;
-                      &:focus {
-                          border: 1px solid var(--gray);
-                      }
-                  }
-              }  
-            }
+            
             .payment_selection {
                 form {
                     display: grid;

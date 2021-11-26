@@ -53,6 +53,9 @@ body {
   -webkit-transition: background-color .3s ease-out;
   transition: background-color .3s ease-out;
   text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn-2 {
@@ -703,6 +706,53 @@ body {
 
 .star_rating_container .label {
   padding-top: 5px;
+}
+
+form .input_group label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 15px;
+}
+
+form .input_group .groued_input {
+  position: relative;
+}
+
+form .input_group .groued_input i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+form .input_group input {
+  display: block;
+  padding: 13px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid var(--light-gray-2);
+  outline: none;
+}
+
+form .input_group input:focus {
+  border: 1px solid var(--gray);
+}
+
+form .input_group textarea {
+  border: 1px solid var(--light-gray-2);
+  outline: none;
+  padding: 13px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form .input_group textarea:focus {
+  border: 1px solid var(--gray);
 }
 
 @media only screen and (max-width: 1028px) {
