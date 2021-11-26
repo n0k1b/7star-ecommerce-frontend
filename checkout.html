@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+
+    <script src="https://kit.fontawesome.com/8d30c69f91.js" crossorigin="anonymous"></script>
+    <title>7 Star | Cart</title>
+</head>
+<body>
+    <header>
+        <nav>            
+            <div class="mobile_nav mobile_nav__hide"> 
+                <div class="mobile_nav__collapse mobile_nav__collapse-hide" id="close_navbar">
+                    <i class="bi bi-arrow-left-short"></i>
+                </div> 
+                <div class="scroll_container">
+                    <div class="mobile_nav-logo">
+                        <div class="icon_container">
+                            <img src="assets/img/icon.svg" alt="">
+                        </div>
+                        <span>7 Star</span>
+                    </div>
+                    <ul class="menu">
+                        <li><a href=""><i class="bi bi-house-fill"></i> Home</a></li>
+                        <li><a href=""><i class="bi bi-arrows-fullscreen"></i> Explore</a></li>
+                        <li class="collapsible"><a href="#"><i class="bi bi-grid-1x2-fill"></i> Category
+                            <ul class="collapsible_menu hide">
+                                <li><a href="restaurant_room.html">Halal Foods</a></li>
+                                <li><a href="">Desserts</a></li>
+                                <li><a href="">Chicken</a></li>
+                                <li><a href="">Pizza</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href=""><i class="bi bi-geo-fill"></i> Track Order</a></li>
+                        <li><a href=""><i class="bi bi-question-circle-fill"></i> Help</a></li>
+                        <li><a href=""><i class="bi bi-person-fill"></i> Sign In</a></li>
+    
+                    </ul>
+                </div>              
+            </div>
+            <div class="primary_nav">
+                <a href="index.html" class="link_standard">
+                    <div class="primary_nav-logo">
+                        <div class="icon_container">
+                            <img src="assets/img/icon.svg" alt="">
+                        </div>
+                        <span>7 Star</span>
+                </div></a>
+                <div class="primary_nav-menu">
+                    <i class="bi bi-list text-accent"></i> <span>Menu</span>
+                </div>
+                <div class="primary_nav-search">
+                    <i class="bi bi-search search-icon"></i>
+                    <input type="text" name="search" placeholder="Search for food you want..">
+                    <i class="bi bi-x clear-icon"></i>
+                </div>
+                <ul class="primary_nav-menu_items">
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Help & Contact</a></li>
+                    <li><a href="" class="btn btn-bordered">Sign in</a></li>
+                    <li><a href="" class="btn btn-3d"><i class="bi bi-cart-fill text-accent"></i> My Cart</a></li>
+                    <li><a href="" class="btn"><i class="bi bi-person-circle text-accent"></i></a></li>
+                </ul>
+            </div>
+            <div class="full-divider"></div>
+            <div class="secondary_nav">
+                <ul class="menu">
+                    <li><a href="">Home Made</a></li>
+                    <li><a href="">Fast Food</a></li>
+                    <li><a href="restaurant_room.html">Halal Food</a></li>
+                    <li><a href="">Desserts</a></li>
+                    <li><a href="">Sandwich</a></li>
+                    <li><a href="">Pizza</a></li>
+                    <li><a href="">Rice</a></li>
+                    <li><a href="">Juice</a></li>
+                    <li><a href="">Salad</a></li>
+                    <li><a href="">Chicken</a></li>
+                    <li><a href="">Noodles</a></li>
+                </ul>
+            </div>
+            <div class="full-divider"></div>
+        </nav>
+    </header>
+    <div class="page_content space_out_nav">
+        <div class="checkout">
+            <div class="breadcrumb p-3">
+                <p>Home > Green vegetable > Food details > Cart > <b>Checkout</b></p>
+            </div>
+            <h1>Checkout</h1>
+            <div class="tab_navigator">
+                <div class="tabs">
+                    <div class="tab" data-field="payment_selection">Customer Info</div>
+                    <div class="tab" data-field="delivery_info">Delivery Info</div>
+                    <div class="tab selected" data-field="customer_info">Payment Section</div>
+                </div>
+                <div class="fields">
+                    <div id="payment_selection" class="payment_selection">
+                        <form action="">
+                            <div class="input_group cc">
+                                <label for="">Card Number</label>
+                                <div class="groued_input cc">
+                                    <input type="text" placeholder="0000 0000 0000 0000">
+                                    <i class="bi bi-credit-card-fill"></i>
+                                </div>
+                            </div>
+                            <div class="input_group name">
+                                <label for="">Name on card</label>
+                                <input type="text" placeholder="Example: John Doe">
+                            </div>
+                            <div class="input_group exp">
+                                <label for="">Expiry Date</label>
+                                <input type="text" placeholder="Example: John Doe">
+                            </div>
+                            <div class="input_group cvv">
+                                <label for="">CVV Code</label>
+                                <div class="groued_input">
+                                    <input type="text" placeholder="">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                            </div>                            
+                        </form>
+                        <div class="save_credit_card">
+                            <div>
+                                <input type="checkbox"><label for="">Save this credit card</label>
+                            </div>
+                            <div>
+                                <span>We Accept: </span>
+                                <img src="assets/img/payment_cards/Western-union.png" alt="">
+                                <img src="assets/img/payment_cards/Paypal.png" alt="">
+                                <img src="assets/img/payment_cards/Group 19.png" alt="">
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a href=""><i class="bi bi-arrow-left"></i> Return To Cart</a>
+                            <a href="" class="btn btn-primary">Confirm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart_details">
+           <div class="shopping_cart">
+               <div class="heading">
+                   <h3>Shopping Cart</h3>
+                   <span class="count">3</span>
+               </div>
+               <div class="full-divider"></div>
+               <div class="items">
+                   <div class="item">
+                       <div>
+
+                           <div 
+                            class="thumbnail"
+                            style="background-image: url(assets/img/featured_foods/image.png);"
+                            ></div>
+                       </div>
+                        <div class="details">
+                            <p>Green vegetable and ricotta tart with parmesan crust</p>
+                            <p>€49.50</p>
+                        </div>
+                   </div>
+                   <div class="item">
+                    <div>
+
+                        <div 
+                         class="thumbnail"
+                         style="background-image: url(assets/img/featured_foods/image2.png);"
+                         ></div>
+                    </div>
+                     <div class="details">
+                         <p>Green vegetable and ricotta tart with parmesan crust</p>
+                         <p>€49.50</p>
+                     </div>
+                </div>
+               </div>
+           </div>
+           <div class="full-divider"></div>
+            <div class="order_summary">
+                <div class="row">
+                    <p>Subtotal</p>
+                    <p>€297</p>
+                </div>
+                <div class="row">
+                    <p>Shipping Fee</p>
+                    <p>€20</p>
+                </div>
+                <div class="row">
+                    <p>Tax</p>
+                    <p>€0</p>
+                </div>
+                <div class="row">
+                    <p>Coupon</p>
+                    <p>No</p>
+                </div>
+                <div class="row total">
+                    <p>Total</p>
+                    <p>€317</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="sponsors">
+            <div class="img_containers">
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 25.png" alt="">
+                </div>
+    
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 26.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 27.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 28.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 29.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 32.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 33.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 34.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 33.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="assets/img/footer/sponsors/image 35.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="details">
+                    <div class="full_logo_inverted mt-3">
+                        <div class="icon_container">
+                            <img src="assets/img/icon_red.svg" alt="">
+                        </div>
+                        <span>7 Star</span>
+                    </div>
+                    <div class="address mt-3">
+                        <h6>Address</h6>
+                        <p>Store & Office</p>
+                        <p>127 Ledbury Rd, London W11</p> 
+                        <p>2AQ, United Kingdom</p>
+                    </div>
+                    <div class="time mt-3">
+                        <h6>Office Hour</h6>
+                        <p>Monday to Sunday</p>
+                        <p>10:00 - 18:00</p> 
+                    </div>
+                </div>
+                <div class="contact">
+                    <h6 class="half_underline">Get In Touch</h6>
+                    <p class="phone mt-3">Phone: +44 20 7792 9090</p>
+                    <p class="service_center">Service Center</p>
+                    <p class="customer_service">Customer Service</p>
+        
+                    <div class="social_icons">
+                        <a href=""><img src="assets/img/social_icons/Facebook.svg" alt=""></a>
+                        <a href=""><img src="assets/img/social_icons/Instagram.svg" alt=""></a>
+                        <a href=""><img src="assets/img/social_icons/Twitter.svg" alt=""></a>
+                        <a href=""><img src="assets/img/social_icons/Youtube.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="userful_links">
+                    <h6 class="half_underline">Userful Links</h6>
+                    <ul class="mt-3">
+                        <li><a href="">Warranty & Complaints</a></li>
+                        <li><a href="">Order & Shipping</a></li>
+                        <li><a href="">Tracking Order</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Repair</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="categories">
+                    <h6 class="half_underline">Categories</h6>
+                    <ul class="mt-3">
+                        <li><a href="">Category 1</a></li>
+                        <li><a href="">Category 2</a></li>
+                        <li><a href="">Category 3</a></li>
+                        <li><a href="">Category 4</a></li>
+                        <li><a href="">Category 5</a></li>
+                        <li><a href="">Category 6</a></li>
+                        <li><a href="">Category 7</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/style.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
