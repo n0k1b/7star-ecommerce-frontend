@@ -32,7 +32,9 @@ i {
 body {
   width: 100%;
 }
-
+a{
+    text-decoration: none;
+}
 .text-primary {
   color: var(--primary);
 }
