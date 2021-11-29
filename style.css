@@ -32,9 +32,7 @@ i {
 body {
   width: 100%;
 }
-a{
-    text-decoration: none;
-}
+
 .text-primary {
   color: var(--primary);
 }
@@ -78,6 +76,15 @@ a{
   border: none;
   outline: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn-rounded-sm {
@@ -755,6 +762,35 @@ form .input_group textarea {
 
 form .input_group textarea:focus {
   border: 1px solid var(--gray);
+}
+
+.has_badge {
+  position: relative;
+}
+
+.has_badge .badge_top_right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 20px;
+  width: 20px;
+  background-color: var(--primary);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+.has_badge .badge-none {
+  display: none;
 }
 
 @media only screen and (max-width: 1028px) {

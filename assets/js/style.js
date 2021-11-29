@@ -79,6 +79,7 @@ function matchHeight() {
         })
     }
 }
+
 selectBadge()
 createStarRatingView()
 makeFavouriteButton()
