@@ -1,0 +1,118 @@
+.top_level {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    .profile_info {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex: 2;
+        .avatar-sm {
+            background-color: var(--light-gray);
+            font-weight: bold;
+        }
+        .details {
+            p {
+                font-family: 'Montserrat', sans-serif !important;
+                &:nth-child(1) {
+                    font-size: 1.3rem;
+                    font-weight: 300;                    
+                }
+                &:nth-child(2) {
+                    font-size: 0.8rem;
+                    color: var(--light-gray-2);
+                }
+            }
+        }
+        i {
+            cursor: pointer;
+        }
+    }
+    .search {
+        flex: 1;
+        background-color: var(--light-gray);
+        border-radius: 100px;
+        padding: 10px 15px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        input {
+            border: none;
+            outline: none;
+            background: none;
+            color: var(--gray);
+            flex: 1;
+        }
+    }
+    .nav-action {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background .4s ease-out;
+        &:hover {
+            background-color: var(--light-gray);
+        }
+    }
+    .unread {
+        position: relative;
+        &:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            background-color: red;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+        }
+    }
+}
+nav {
+    padding: 18px 16px;
+    background-color: var(--light-gray);
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        li {
+            a {
+                text-decoration: none;
+                color: var(--light-gray-3);
+                &:hover {
+                    color: var(--gray);
+                }
+            }
+        }
+        .selected {
+            a {
+                font-weight: bold;
+                color: var(--gray);
+                pointer-events: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1028px) {
+    .top_level {
+        .search {
+            display: none;
+        }
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    .top_level {
+        .logo {
+            display: none;
+        }
+    }
+
+}
