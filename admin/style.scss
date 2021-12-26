@@ -100,6 +100,10 @@ body {
     background-color: var(--accent);
     color: white;
 }
+.btn-blue {
+    background-color: #0654ba;
+    color: white;
+}
 .btn-accent:hover {
     background-color: #0a5c49;
 }
@@ -163,6 +167,18 @@ body {
 .mt-4 {
     margin-top: 40px;
 }
+.mr-1 {
+    margin-right: 10px;
+}
+.mr-2 {
+    margin-right: 15px;
+}
+.mr-3 {
+    margin-right: 25px;
+}
+.mr-4 {
+    margin-right: 40px;
+}
 .m-1 {
     margin: 10px;
 }
@@ -186,6 +202,11 @@ body {
 }
 .p-4 {
     padding: 40px;
+}
+.vertical_divider_gray {
+    height: 100%;
+    width: 1px;
+    background-color: var(--light-gray);
 }
 .centered-flex {
     display: flex;
@@ -322,6 +343,7 @@ body {
     border-radius: 99px;
     background-color: var(--light-gray);
     color: var(--gray);
+
 }
 @media only screen and (max-width: 1028px) {
     .h_list-3 {

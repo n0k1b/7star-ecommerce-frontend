@@ -1,0 +1,61 @@
+.content-blocks {
+    padding: 10px 30px;
+    .menu {
+        background-color: var(--light-gray);
+        padding: 40px;
+        font-size: 0.9rem;
+        height: 300px;
+        color: var(--gray);
+        h3 {
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+        li {
+            padding: 2.5px 0px;
+            a {
+                text-decoration: none;
+                color: var(--gray);
+            }
+            .selected a {
+                pointer-events: none;
+                font-weight: bold;
+            }
+        }
+    }
+    .contents {
+        flex: 1;
+        background-color: var(--light-gray);
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: 
+            "branding branding branding"
+            "stats stats menu"
+        ;
+        & > div {
+            background-color: white;
+            border: 1px solid var(--light-gray-2);
+        }
+    }
+    .branding {
+        grid-area: branding;
+    }
+    .promotion_stats {
+        grid-area: stats;
+    }
+    .promotion_menu {
+        grid-area: menu;
+        padding: 10px;
+        font-weight: 800;
+        font-style: italic;
+        ul {
+            li {
+                padding: 5px 0px;
+                border-bottom: 1px solid var(--light-gray);
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.content-blocks {
+  padding: 10px 30px;
+}
+
+.content-blocks .menu {
+  background-color: var(--light-gray);
+  padding: 40px;
+  font-size: 0.9rem;
+  height: 300px;
+  color: var(--gray);
+}
+
+.content-blocks .menu h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.content-blocks .menu li {
+  padding: 2.5px 0px;
+}
+
+.content-blocks .menu li a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.content-blocks .menu li .selected a {
+  pointer-events: none;
+  font-weight: bold;
+}
+
+.content-blocks .contents {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: var(--light-gray);
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+      grid-template-areas: "branding branding branding" "stats stats menu";
+}
+
+.content-blocks .contents > div {
+  background-color: white;
+  border: 1px solid var(--light-gray-2);
+}
+
+.content-blocks .branding {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: branding;
+}
+
+.content-blocks .promotion_stats {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: stats;
+}
+
+.content-blocks .promotion_menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: menu;
+  padding: 10px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.content-blocks .promotion_menu ul li {
+  padding: 5px 0px;
+  border-bottom: 1px solid var(--light-gray);
+}
+/*# sourceMappingURL=marketing.css.map */
