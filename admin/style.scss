@@ -238,6 +238,80 @@ body {
         font-weight: bold;
     }
 }
+.plain-list {
+    list-style-type: none;
+    li {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+.bg-gray {
+    background-color: var(--light-gray);
+}
+.flex {
+    display: flex;
+}
+.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-align-center {
+    align-items: center;
+}
+.flex-align-end {
+    align-items: flex-end;
+}
+.flex-justfiy-center {
+    justify-content: center;
+}
+.flex-justfiy-space_evenly {
+    justify-content: space-evenly;
+}
+.flex-justfiy-space_around {
+    justify-content: space-around;
+}
+.flex-justfiy-space_between {
+    justify-content: space-between;
+}
+.flex-gap-1 {
+    gap: 10px;
+}
+.flex-gap-2 {
+    gap: 15px;
+}
+.flex-gap-3 {
+    gap: 20px;
+}
+.flex-gap-4 {
+    gap: 25px;
+}
+.border-box {
+    box-sizing: border-box;
+}
+.badge {
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.badge-orange {
+    background-color: #FB8832;
+    color: white;
+
+}
+.badge-red {
+    background-color: #FF5756;
+    color: white;
+}
+.badge-green {
+    background-color: #2EA387;
+    color: white;
+}
 @media only screen and (max-width: 1028px) {
     .h_list-3 {
         display: grid;

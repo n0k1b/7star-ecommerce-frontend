@@ -1,0 +1,40 @@
+:root {
+    --table-gray: #f5f5f5;
+    --table-accent: #E5F7FF;
+    --table-dark-gray: #555555;
+}
+.data-table {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555555;
+    td {
+        padding: 18px;
+    }
+    thead {
+        background-color: var(--table-gray);        
+    }
+    tbody {
+        tr:nth-child(odd) {
+            background-color: var(--table-accent);
+        }
+    }
+}
+.data-table-gray {
+    font-size: 0.9rem;
+    color: #555555;
+    border-collapse: collapse;
+    th, td {
+        padding: 18px;
+    }
+    thead {
+        background-color: var(--table-gray); 
+        tr {
+            border-bottom: 2px solid var(--table-dark-gray);
+        }       
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid var(--table-gray);
+        }
+    }
+}

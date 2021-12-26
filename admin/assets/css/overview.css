@@ -1,0 +1,115 @@
+.content {
+  margin: 20px 30px;
+}
+
+.content .tabs .btn {
+  display: block !important;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+.content .tabs .btn:hover {
+  background-color: var(--light-gray-2);
+}
+
+.content-blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+  gap: 10px;
+      grid-template-areas: "sales sales sales orders orders orders" "announcements announcements traffic_rate payment_summary payment_summary offer_for_seller";
+  margin: 30px 20px;
+}
+
+.content-blocks .sales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: sales;
+}
+
+.content-blocks .orders {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: orders;
+}
+
+.content-blocks .announcements {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: announcements;
+}
+
+.content-blocks .traffic_rate {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: traffic_rate;
+}
+
+.content-blocks .payment_summary {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: payment_summary;
+}
+
+.content-blocks .payment_summary table {
+  border: 1px solid var(--light-gray);
+}
+
+.content-blocks .payment_summary table tr:nth-child(1) {
+  border-bottom: 2px solid var(--gray);
+}
+
+.content-blocks .payment_summary table a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.content-blocks .offer_for_seller {
+  padding: 5px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: offer_for_seller;
+}
+
+.content-blocks .offer_for_seller table {
+  padding: 5px;
+  border: 1px solid var(--light-gray);
+  font-size: 0.8rem;
+}
+
+.content-blocks .offer_for_seller table td {
+  padding: 5px 0px;
+}
+
+.content-blocks .offer_for_seller .action_button {
+  width: 100%;
+  padding: 20px 0px;
+  border: 1px solid var(--light-gray);
+}
+
+.content-blocks .offer_for_seller .action_button a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+@media only screen and (max-width: 1208px) {
+  .content-blocks {
+    width: 90vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1;
+        grid-template-columns: 1;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    gap: 10px;
+        grid-template-areas: "sales" "orders" "announcements"  "traffic_rate" "payment_summary"  "offer_for_seller";
+  }
+}
+/*# sourceMappingURL=overview.css.map */
