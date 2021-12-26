@@ -1,0 +1,43 @@
+.content-blocks {
+  padding: 10px 30px;
+}
+
+.content-blocks .menu {
+  background-color: var(--light-gray);
+  padding: 40px;
+  font-size: 0.9rem;
+  height: 300px;
+  color: var(--gray);
+}
+
+.content-blocks .menu h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.content-blocks .menu li {
+  padding: 2.5px 0px;
+}
+
+.content-blocks .menu li a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.content-blocks .menu li .selected a {
+  pointer-events: none;
+  font-weight: bold;
+}
+
+.content-blocks .contents {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content-blocks .contents .section {
+  border: 1px solid var(--light-gray);
+  padding: 20px;
+}
+/*# sourceMappingURL=orders.css.map */

@@ -142,6 +142,20 @@ nav ul .selected a {
   pointer-events: none;
 }
 
+.content {
+  margin: 20px 30px;
+}
+
+.content .tabs .btn {
+  display: block !important;
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+.content .tabs .btn:hover {
+  background-color: var(--light-gray-2);
+}
+
 @media only screen and (max-width: 1028px) {
   .top_level .search {
     display: none;

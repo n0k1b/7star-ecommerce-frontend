@@ -384,27 +384,33 @@ body {
           align-items: flex-end;
 }
 
-.flex-justfiy-center {
+.flex-justify-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.flex-justfiy-space_evenly {
+.flex-justify-space_evenly {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-.flex-justfiy-space_around {
+.flex-justify-space_around {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.flex-justfiy-space_between {
+.flex-justify-space_between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flex-stretch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .flex-gap-1 {
@@ -447,6 +453,15 @@ body {
 .badge-green {
   background-color: #2EA387;
   color: white;
+}
+
+.rounded-input-box {
+  outline: none;
+  border: none;
+  padding: 14px;
+  border-radius: 99px;
+  background-color: var(--light-gray);
+  color: var(--gray);
 }
 
 @media only screen and (max-width: 1028px) {

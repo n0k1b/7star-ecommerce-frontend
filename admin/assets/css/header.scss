@@ -101,6 +101,20 @@ nav {
         }
     }
 }
+
+.content {
+    margin: 20px 30px;
+    .tabs {
+        .btn {
+            display: block !important;
+            color: var(--gray);
+            font-size: 0.8rem;
+            &:hover {
+                background-color: var(--light-gray-2);
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1028px) {
     .top_level {
         .search {
