@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard | Overview</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/performance.css">
+    <link rel="stylesheet" href="assets/css/data-table.css">
+    <!-- <link rel="stylesheet" href="vendor/bootstrap-5.1.3/css/bootstrap.css"> -->
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/8d30c69f91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="top_level">
+            <div class="logo_with_text logo">
+                <div class="icon_container">
+                    <img src="assets/img/icon.svg" alt="">
+                </div>
+                <span>7 Star</span>
+            </div>
+            <div class="profile_info">
+                <div class="avatar-sm">
+                    <p>JD</p>
+                </div>
+                <div class="details">
+                    <p>John Doe</p>
+                    <p>Birmigham, England</p>
+                </div>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="search">
+                <i class="fas fa-search"></i>
+                <input type="text" name="search" placeholder="Search For Anything">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="notifications nav-action unread">
+                <img src="assets/img/icons/Notification.svg" alt="">
+            </div>
+            <div class="settings nav-action">
+                <img src="assets/img/icons/settings.svg" alt="">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="selected"><a href="">Overview</a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">Listing</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Performance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- List of tabs to select page content-->
+    <div class="content">
+        <div class="tabs">
+            <ul class="plain-list flex flex-gap-4">
+                <li class="tab"><a href="" class="btn btn-gray">Inbox (12)</a></li>
+                <li class="tab"><a href="" class="btn btn-gray">Orders (31 days)</a></li>
+                <li class="tab"><a href="" class="btn btn-gray">Sales (12)</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Block of contents on dashboard -->
+    <div class="content-blocks flex flex-justify-space_evenly flex-gap-2">
+        <div class="menu">
+            <ul class="plain-list">
+                <li class="selected"><a href="">Active</a></li>
+                <li><a href="">Unsold</a></li>
+                <li><a href="">Draft</a></li>
+                <li><a href="">Ended</a></li>
+            </ul>
+            <hr class="mt-1" />
+            <ul class="plain-list mt-1">
+                <li><a href="">Cancellations</a></li>
+                <li><a href="">Returns</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="section">
+                <div class="heading flex flex-gap-2 flex-align-center">
+                    <h2>All Orders</h2>
+                    <input type="text" placeholder="Search by buyername / date / order" class="flex-stretch rounded-input-box">
+                    <a href="" class="btn btn-gray"><b>Download CSV <i class="fas fa-download"></i></b></a>
+                    <a href="" class="btn btn-gray"><b>Export <i class="fas fa-upload"></i></b></a>
+                </div>
+                <div class="details mt-3">
+                    <div class="sales flex flex-justify-space_between flex-gap-2">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <td>Day(s)</td>
+                                    <td>Amount</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Today</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Last 7 days</td>
+                                    <td>$500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Last 31 days</td>
+                                    <td>$1000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Last 90 days</td>
+                                    <td>$2000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                        
+                        <!-- Sales Data chart -->
+                        <div class="chart-container" style="position: relative; width: 900px" class="flex-stretch">
+                            <canvas id="sales_data_trendline"></canvas>
+                        </div>
+                    </div>
+                    <div class="more flex flex-gap-2 mt-3">
+                       <div>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <td>Day(s)</td>
+                                        <td>Amount</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Today</td>
+                                        <td>$100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last 7 days</td>
+                                        <td>$500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last 31 days</td>
+                                        <td>$1000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last 90 days</td>
+                                        <td>$2000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                       </div> 
+                       <div>
+                        <table class="data-table-gray">
+                            <thead>
+                                <tr>
+                                    <td>Day(s)</td>
+                                    <td>Amount</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Today</td>
+                                    <td>$100.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Last 7 days</td>
+                                    <td>$500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Last 31 days</td>
+                                    <td>$1000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Last 90 days</td>
+                                    <td>$2000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script>
+        const canvas = document.getElementById('sales_data_trendline');
+        const myChart = new Chart(canvas, {
+            type: 'line',
+            
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                datasets: [{
+                    label: 'Number Of Sales Each Month',
+                    data: [
+                        12, 20, 30, 31, 28,  3, 35, 18, 24, 15, 32,  1,
+                        36, 14,  0, 10, 16, 22, 26, 18, 20, 15, 38, 13,
+                        15,  5, 12, 32,  3,  5,  3, 16, 38, 34,  2,  1,
+                        16, 29, 25, 16, 18,  6,  7,  4, 24, 21,  5, 12,
+                        10, 38,  1, 18,  7,  7, 38, 39, 39, 11, 28, 38,
+                        28,  4, 12, 27, 30, 33, 16,  3, 14, 33, 37, 29,
+                        2,  6,  2, 35,  4, 20, 26,  5, 21, 15, 29, 17,
+                        20, 24,  4, 20, 27,  9, 35, 10, 23, 14, 32, 15,
+                        29, 33, 39,  1
+                    ],
+                    borderColor: '#007AFF',
+                    borderWidth: 1,
+                    tension: 0.1
+                    
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
