@@ -40,10 +40,18 @@
                             display: flex;
                             align-items: center;
                         }
-                        &:nth-child(4) {
-                            white-space: nowrap;
+                        &:nth-child(4) {                            
+                            div {
+                                display: flex;
+                                align-items: center;
+                            }
                             button, span {
                                 margin-right: 10px;
+                                font-size: 1.2rem;
+                            }
+                            .btn-rounded {
+                                font-size: 2rem;
+                                font-weight: lighter;
                             }
                         }
                     }
@@ -84,6 +92,7 @@
         box-sizing: border-box;
         h3 {
             text-align: center;
+            text-transform: uppercase;
             margin-bottom: 15px;
         }
         .row {
@@ -91,7 +100,8 @@
             justify-content: space-between;
             align-items: center;
             font-size: 0.9rem;
-            color: var(--gray);
+            // color: var(--gray);
+            font-size: 1.1rem;
             margin-bottom: 15px;
         }
         .total {
@@ -102,10 +112,12 @@
             display: flex;
             input {
                 flex: 1;
-                padding: 17px 7px;
-                background-color: none;
+                padding: 17px 12px;
+                background-color: transparent;
                 border: 1px solid gray;
                 outline: none;
+                font-size: 1.1rem;
+                color: black;
             }
             button {
                 padding: 17px 24px;
@@ -131,15 +143,19 @@
             text-decoration: none;
         }
         .checkout_button {
+            border-radius: 4px;
             color: white;
             background-color: var(--primary);
+            font-size: 1.2rem;
             &:hover {
                 background-color: var(--primary-hover);
             }
         }
         .order_more_button {
+            border-radius: 4px;
             color: var(--gray);
-            border: 2px solid var(--gray);
+            border: 2px solid var(--light-gray-2);
+            font-size: 1.2rem;
             &:hover {
                 background-color: var(--gray);
                 color: white;
