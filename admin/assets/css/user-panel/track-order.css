@@ -1,0 +1,28 @@
+.content-blocks {
+  width: 900px;
+  margin-top: 44px;
+}
+
+.tracking_details {
+  width: 660px;
+}
+
+.tracking_details .heading {
+  padding: 25px 12px;
+  border-radius: 8px 8px 0px 0px;
+  background-color: var(--light-gray);
+}
+
+.tracking_details .details {
+  border: 1px solid var(--light-gray);
+  padding: 12px;
+}
+
+.tracking_details .details li {
+  margin-bottom: 20px;
+}
+
+.tracking_details .details li:last-child {
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=track-order.css.map */

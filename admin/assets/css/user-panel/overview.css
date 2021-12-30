@@ -1,0 +1,52 @@
+.menu {
+  width: 868px;
+  height: 291px;
+  background-color: var(--light-gray);
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu li img {
+  margin-bottom: 40px;
+}
+
+.menu li a, .menu li p {
+  color: var(--gray);
+  font-size: 1.2rem;
+}
+
+.content-blocks {
+  margin-top: 45px;
+}
+
+.content-blocks h2 {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=overview.css.map */

@@ -359,6 +359,69 @@ body {
   font-weight: bold;
 }
 
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 104px;
+}
+
+.steps .completed {
+  background-color: var(--accent) !important;
+  color: white !important;
+}
+
+.steps > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  text-align: center;
+  position: relative;
+}
+
+.steps > div .circle {
+  margin-bottom: 25px;
+  color: var(--light-gray-2);
+  height: 58px;
+  width: 58px;
+  font-size: 2rem;
+  font-weight: lighter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--light-gray);
+  border-radius: 50%;
+}
+
+.steps > div:after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  background-color: var(--light-gray);
+  z-index: -1;
+}
+
+.steps > div:last-child:after {
+  width: 0px;
+}
+
 .plain-list {
   list-style-type: none;
 }

@@ -1,0 +1,31 @@
+.menu {
+    width: 868px;
+    height: 291px;
+    background-color: var(--light-gray);
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0;
+    padding: 0;
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-bottom: 40px;
+        }
+        a, p {
+            color: var(--gray);
+            font-size: 1.2rem;
+        }
+    }
+}
+.content-blocks {
+    margin-top: 45px;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
