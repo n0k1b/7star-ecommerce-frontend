@@ -186,20 +186,21 @@
             <div class="images">
                 <div
                     class="images__viewer"
+                    id="image_view"
                     style="background-image: url(assets/img/featured_foods/image2.png);"
                 ></div>
-                <div class="images__selector">
+                <div class="images__selector" id="image_navigator">
                     <div
                         class="img match_height img__selected"
                         style="background-image: url(assets/img/featured_foods/image2.png);"
                     ></div>
                     <div
                         class="img match_height"
-                        style="background-image: url(assets/img/featured_foods/image2.png);"
+                        style="background-image: url(assets/img/featured_foods/image3.png);"
                     ></div>
                     <div
                         class="img match_height"
-                        style="background-image: url(assets/img/featured_foods/image2.png);"
+                        style="background-image: url(assets/img/featured_foods/image.png);"
                     ></div>
                 </div>
             </div>
@@ -645,5 +646,19 @@
     <script src="assets/js/style.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/vendor/glider/glider.js"></script>
+    <script>
+        // To make image navigation menu 
+        var navigation = document.getElementById("image_navigator")
+        var imageView = document.getElementById("image_view")
+        for(let child of navigation.children) {
+            child.addEventListener('click', (e) => {
+                for(let child of navigation.children) {
+                    child.classList.remove("img__selected")
+                }
+                imageView.style.backgroundImage = child.style.backgroundImage
+                child.classList.add("img__selected")
+            })
+        }
+    </script>
 </body>
 </html>
