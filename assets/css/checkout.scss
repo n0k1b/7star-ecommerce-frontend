@@ -4,7 +4,9 @@
     .checkout {
         flex: 1;
     }
-    
+    .hide {
+        display: none !important;
+    }
     h1 {
         text-align: center;
     }
@@ -35,7 +37,6 @@
         }
         .fields {
             margin-top: 30px;  
-            
             .payment_selection {
                 form {
                     display: grid;
@@ -103,25 +104,35 @@
                         }
                     }
                 }
-                .action {
-                    margin-top: 30px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    font-size: 1.3rem;
-                    a {
-                        &:nth-child(1) {
-                            color: var(--gray);
-                            text-decoration: none;
-                        }
-                        &:nth-child(2) {
-                            padding-left: 150px;
-                            padding-right: 150px;
-                            font-weight: lighter;
-                        }
+            }  
+            .double_column {
+                display: grid;
+                grid-gap: 25px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                width: 100%;
+                .span-row-2 {
+                    grid-row: span 2;
+                }
+            }      
+            .action {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.3rem;
+                a {
+                    &:nth-child(1) {
+                        color: var(--gray);
+                        text-decoration: none;
+                    }
+                    &:nth-child(2) {
+                        padding-left: 150px;
+                        padding-right: 150px;
+                        font-weight: lighter;
                     }
                 }
-            }        
+            }
         }
     }
 

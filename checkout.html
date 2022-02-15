@@ -186,9 +186,9 @@
             <h1>Checkout</h1>
             <div class="tab_navigator">
                 <div class="tabs">
-                    <div class="tab" data-field="payment_selection">Customer Info</div>
-                    <div class="tab" data-field="delivery_info">Delivery Info</div>
-                    <div class="tab selected" data-field="customer_info">Payment Section</div>
+                    <div class="tab" data-field="customer_info">Customer Info</div>
+                    <div class="tab selected" data-field="delivery_info">Delivery Info</div>
+                    <div class="tab" data-field="payment_selection">Payment Section</div>
                 </div>
                 <div class="fields">
                     <div id="payment_selection" class="payment_selection">
@@ -227,6 +227,64 @@
                                 <img src="assets/img/payment_cards/Group 19.png" alt="">
                             </div>
                         </div>
+                        <div class="action">
+                            <a href=""><i class="bi bi-arrow-left"></i> Return To Cart</a>
+                            <a href="" class="btn btn-primary">Confirm</a>
+                        </div>
+                    </div>
+                    <div id="customer_info">
+                        <form action="" class="double_column">
+                            <div class="input_group cc">
+                                <div class="groued_input cc">
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="input_group name">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="input_group email">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="input_group cvv span-row-2">
+                                <div class="groued_input" style="height: 100%">
+                                    <textarea placeholder="Address for delivery" style="height: 100%"></textarea>
+                                </div>
+                            </div>   
+                            <div class="input_group city">
+                                <input type="text" placeholder="City">
+                            </div>
+                            <div class="input_group email">
+                                <input type="text" placeholder="Postal Code">
+                            </div>
+                            <div class="input_group mobile_phone">
+                                <input type="text" placeholder="Mobile Phone">
+                            </div>                         
+                        </form>
+                        <div class="action">
+                            <a href=""><i class="bi bi-arrow-left"></i> Return To Cart</a>
+                            <a href="" class="btn btn-primary">Confirm</a>
+                        </div>
+                    </div>
+                    <div id="delivery_info">
+                        <form action="" class="double_column">
+                            <div class="input_group name">
+                                <input type="text" placeholder="Name For Delivery">
+                            </div>
+                            <div class="input_group email">
+                                <input type="text" placeholder="District">
+                            </div>
+                            <div class="input_group cvv span-row-2">
+                                <div class="groued_input" style="height: 100%">
+                                    <textarea placeholder="Address for delivery" style="height: 100%"></textarea>
+                                </div>
+                            </div>   
+                            <div class="input_group city">
+                                <input type="text" placeholder="Contact Number">
+                            </div>
+                            <div class="input_group email">
+                                <input type="text" placeholder="Postal Code">
+                            </div>                        
+                        </form>
                         <div class="action">
                             <a href=""><i class="bi bi-arrow-left"></i> Return To Cart</a>
                             <a href="" class="btn btn-primary">Confirm</a>
@@ -395,4 +453,5 @@
     </footer>
     <script src="assets/js/style.js"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/tabs.js"></script>
 </body>
